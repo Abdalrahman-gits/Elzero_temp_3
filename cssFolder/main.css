@@ -2,8 +2,9 @@
 :root {
   --main-color: #159aef;
   --back-color:#ececec;
+  --section-color: #e7e7e7;
   --transition-duration: 0.3s;
-  --padding:100px
+  --padding:100px;
 }
 /* End Variables */
 /* Start Global */
@@ -65,10 +66,10 @@ body  {
   z-index: -1;
 }
 .title::before {
-  left: -20%;
+  left: -30px;
 }
 .title::after {
-  right: -20%;
+  right: -30px;
 }
 .title:hover {
   color: white;
@@ -114,7 +115,7 @@ header {
   justify-content: center;
   background-color: white;
   position: relative;
-  box-shadow: 0 0 10px #ddd;
+  box-shadow: 0 0 10px var(--section-color);
 }
 header .container {
   display: flex;
@@ -418,7 +419,7 @@ header .menu .innerul > li > a  {
 .gallery  {
   padding-top: var(--padding);
   padding-bottom: var(--padding);
-  background-color: #ddd;
+  background-color: var(--section-color);
 }
 .gallery .boxes {
   display: grid;
@@ -576,5 +577,131 @@ header .menu .innerul > li > a  {
   color: white;
   background-position: left top;
 }
-
 /* End Features */
+/* Start Testimonials */
+.testimonials {
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+  background-color: var(--section-color);
+}
+.testimonials .container  {
+
+}
+.testimonials .boxes  {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(290px , 1fr));
+  gap: 40px;
+}
+.testimonials .box  {
+  position: relative;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: 0 2px 15px var(--section-color);
+}
+.testimonials .box img {
+  width: 95px;
+  height: 95px;
+  border: 10px solid var(--section-color);
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateY(-50%);
+}
+.testimonials .box .stars .golden {
+  color: #ffb600;
+}
+.testimonials .box h1 {
+  font-size: larger;
+  margin: 0;
+}
+.testimonials .box p {
+  color: #00000085;
+  margin: 8px 0;
+  line-height: 1.7;
+}
+/* End Testimonials */
+/* Start Members */
+.team {
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+}
+.team .boxes  {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(290px,1fr));
+  gap: 30px;
+}
+.team .box  {
+  position: relative;
+}
+.team .box::before,
+.team .box::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 6px;
+}
+.team .box::before  {
+  width: calc(100% - 70px);
+  background-color: #f3f3f3;
+  z-index: -2;
+  transition-duration: var(--transition-duration);
+}
+.team .box::after {
+  width: 0;
+  background-color: #e4e4e4;
+  z-index: -1;
+  transition-duration: var(--transition-duration);
+}
+.team .box:hover::after {
+  width: calc(100% - 70px);
+}
+.team .box:hover img,
+.team .box:hover .info h3  {
+  filter: grayscale(1);
+}
+.team .data  {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-top: 55px;
+}
+.team .data img  {
+  width: calc(100% - 60px);
+  border-radius: 6px;
+  transition: var(--transition-duration);
+}
+.team .data .links  {
+  display: flex;
+  flex-flow: column;
+  width: 60px;
+  gap: 32px;
+}
+.team .data .links a  {
+  text-align: center;
+  color: gray;
+}
+.team .data .links a i  {
+  transition-duration: var(--transition-duration);
+}
+.team .data .links a:hover i  {
+  color: var(--main-color);
+}
+.team .info {
+  position: relative;
+  padding-left: 90px;
+}
+.team .info h3  {
+  margin-top: 20px;
+  color: var(--main-color);
+  font-size: 22px;
+  transition-duration: var(--transition-duration);
+}
+.team .info p  {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+/* End Members */
