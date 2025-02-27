@@ -29,7 +29,7 @@
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#features">Features</a></li>
         <li>
-          <a href="" class="last-li">Other Links</a>
+          <a href="#" class="last-li">Other Links</a>
           <!-- Start Big menu -->
           <div class="menu">
             <img src="photos/megamenu.png" alt="menuImage">
@@ -184,6 +184,7 @@
       </div>
     </div>
   </div>
+  <div class="spikes"></div>
   <!-- End Articles -->
   <!-- Start Gallery -->
   <div class="gallery" id="gallery">
@@ -538,6 +539,7 @@
   </div>
   <!-- End Members -->
   <!-- Start Services -->
+  <div class="spikes"></div>
   <div class="services" id="services">
     <div class="container">
       <h1 class="title">services</h1>
@@ -602,6 +604,7 @@
   <!-- End Services -->
   <!-- Start Skills -->
   <div class="skills" id="skills">
+    <div class="dots dots-up"></div>
     <div class="container">
       <h1 class="title">our skills</h1>
       <div class="content">
@@ -634,6 +637,7 @@
         </div>
       </div>
     </div>
+    <div class="dots dots-down"></div>
   </div>
   <!-- End Skills -->
   <!-- Start How Section -->
@@ -677,25 +681,26 @@
   <!-- End How Section -->
   <!-- Start Latest Events -->
   <div class="events" id="events">
+    <div class="dots dots-up"></div>
     <h1 class="title">latest events</h1>
     <div class="container">
       <img src="photos/events.png" alt="Events Photo">
       <div class="info">
         <div class="time">
           <div class="unit">
-            <span class="num">0-783</span>
+            <span class="num days"></span>
             <span class="unit-title">days</span>
           </div>
           <div class="unit">
-            <span class="num">0-24</span>
+            <span class="num hours"></span>
             <span class="unit-title">hours</span>
           </div>
           <div class="unit">
-            <span class="num">0-26</span>
+            <span class="num minutes"></span>
             <span class="unit-title">minutes</span>
           </div>
           <div class="unit">
-            <span class="num">0-44</span>
+            <span class="num seconds"></span>
             <span class="unit-title">seconds</span>
           </div>
         </div>
@@ -704,13 +709,15 @@
         </p>
       </div>
       <form action="">
-        <input type="email" placeholder="Enter Your E-mail">
+        <input class="input" type="email" placeholder="Enter Your E-mail" data-name="email-1">
         <input type="submit" value="subscribe">
       </form>
     </div>
+    <div class="dots dots-down"></div>
   </div>
   <!-- End Latest Events -->
   <!-- Start Pricing Plans -->
+  <div class="spikes"></div>
   <div class="pricing" id="pricing">
     <h1 class="title">pricing plans</h1>
     <div class="container">
@@ -844,7 +851,7 @@
   </div>
   <!-- End Top Videos -->
   <!-- Start Stats -->
-  <div class="stats">
+  <div class="stats" id="stats">
     <h1 class="stats-title"></h1>
     <div class="container">
       <div class="stat">
@@ -871,7 +878,7 @@
   </div>
   <!-- End Stats -->
   <!-- Start Discount -->
-  <div class="discount" id="discount">
+  <div class="discount" id="request">
     <div class="offer">
       <div class="content">
         <h1>we have a discount</h1>
@@ -883,15 +890,69 @@
     </div>
     <form action="">
       <p>Request a discount</p>
-      <input type="text" class="input" placeholder="Your Name">
-      <input type="email" class="input" placeholder="Your E-mail">
-      <input type="text" class="input" placeholder="Your Phone">
-      <textarea class="input" name="needs" id="needs" placeholder="tell us about your needs"></textarea>
+      <input type="text" class="input" placeholder="Your Name" data-name="name">
+      <input type="email" class="input" placeholder="Your E-mail" data-name="email-2">
+      <input type="text" class="input" placeholder="Your Phone" data-name="phone">
+      <textarea class="input" name="needs" id="needs" placeholder="tell us about your needs" data-name="needs"></textarea>
       <input type="submit" value="send">
     </form>
   </div>
   <!-- End Discount -->
-  <!-- Start  -->
+  <!-- Start Footer -->
+  <footer>
+    <div class="container">
+      <div class="social">
+        <h1>elzero</h1>
+        <ul>
+          <li><a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="#" class="x-twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+          <li><a href="#" class="youtube"><i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus nulla rem, dignissimos iste aspernatur</p>
+      </div>
+      <ul class="links">
+        <a href="#">
+          <li><i class="fa-solid fa-angles-right"></i>important link</li>
+        </a>
+        <a href="#">
+          <li><i class="fa-solid fa-angles-right"></i>important link</li>
+        </a>
+        <a href="#">
+          <li><i class="fa-solid fa-angles-right"></i>important link</li>
+        </a>
+        <a href="#">
+          <li><i class="fa-solid fa-angles-right"></i>important link</li>
+        </a>
+        <a href="#">
+          <li><i class="fa-solid fa-angles-right"></i>important link</li>
+        </a>
+      </ul>
+      <ul class="info">
+        <li>
+          <i class="fa-solid fa-location-dot"></i>
+          <p>Egypt, Giza, Inside The Sphinx, Room Number 220</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-clock"></i>
+          <p>Business Hours: From 10:00 To 18:00</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-phone-volume"></i>
+          <p>+20123456789 <br> +20198765432</p>
+        </li>
+      </ul>
+      <div class="images">
+        <img src="photos/gallery-01.png" alt="">
+        <img src="photos/gallery-02.png" alt="">
+        <img src="photos/gallery-03.jpg" alt="">
+        <img src="photos/gallery-04.png" alt="">
+        <img src="photos/gallery-05.jpg" alt="">
+        <img src="photos/gallery-06.png" alt="">
+      </div>
+    </div>
+    <div class="foot">Made With &lt;3 By Elzero</div>
+  </footer>
+  <!-- End Footer -->
   <script src="Elzero.js"></script>
 </body>
 </html>
